@@ -1,3 +1,4 @@
+import 'package:codelab_2/pages/implicit_animation.dart';
 import 'package:codelab_2/pages/constraint.dart';
 import 'package:codelab_2/pages/navigation_routing.dart';
 import 'package:codelab_2/pages/type_scale.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const TypeScalePage(),
+        '/': (context) => AnimationPage(),
         '/secondScreen': (context) => const SecondScreen(),
         '/secondScreenWithData': (context) => SecondScreenWithData(
               ModalRoute.of(context)?.settings.arguments as String,
